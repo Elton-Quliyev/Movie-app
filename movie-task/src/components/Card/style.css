@@ -1,0 +1,27 @@
+.movies{
+    display: flex;
+    width: 100%;
+    overflow: scroll;
+    gap: 25px;
+    margin-top: 30vh;
+}
+
+.item{
+    height: 520px;
+    background-color: #f6f3f3;
+    border-radius: 8px;
+    
+}
+img{
+    height: 400px;
+    border-radius: 8px;
+
+}
+
+.movie-name{
+    margin-left: 15px;
+
+}
+.movie-date{
+    margin-left: 15px;
+}
