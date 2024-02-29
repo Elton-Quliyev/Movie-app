@@ -1,0 +1,19 @@
+.error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    color: red;
+}
+
+.error-message{
+    font-size: 40px;
+    text-shadow: 4px 4px 12px black;
+
+}
+.error-symvol{
+    font-size: 60px;
+    text-shadow: 4px 4px 12px black;
+
+}

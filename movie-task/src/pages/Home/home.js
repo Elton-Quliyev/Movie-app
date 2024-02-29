@@ -7,7 +7,7 @@ import Card from '../../components/Card';
 
 export default function Home() {
 
-    const [info, setInfo] = useState([]);
+  const [info, setInfo] = useState([]);
 
   const fetchData = async (path) => {
     try {
