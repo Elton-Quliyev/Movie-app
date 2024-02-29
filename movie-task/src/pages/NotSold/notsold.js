@@ -1,6 +1,8 @@
+import React from 'react'
+
 export default function NotSold() {
   return (
-    <div>
+    <div style={{fontSize: '60px'}}>
       Error 404
     </div>
   )
