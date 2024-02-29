@@ -28,7 +28,7 @@ export default function NowPlaying() {
         info.map((item)=> (
           <Card
             photo={item.backdrop_path} 
-            // title={item.title}
+            title={item.title}
             />
         ))
       }
