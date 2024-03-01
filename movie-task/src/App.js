@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes , Route } from 'react-router-dom';
 import Home from './pages/Home/home';
 import NowPlaying from './pages/NowPlaying/nowplaying';
 import NotSold from './pages/NotSold/notsold';
+import MovieInfo from './pages/MovieInfo/movie_info';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/nowplaying" element={<NowPlaying />} />
           <Route path='/*' element={<NotSold/>}/>
+          <Route path="/movie/:id" element={<MovieInfo/>} />
         </Routes>
 
       </Router>
