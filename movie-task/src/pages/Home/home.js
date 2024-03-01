@@ -26,8 +26,9 @@ export default function Home() {
               
               <Card
                 key={index}
-                info = {index}
-                onClick={handleCardClick}
+                info = {movie}
+                klikle={handleCardClick}
+                
                 />
               
             </div>
