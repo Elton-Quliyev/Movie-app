@@ -1,0 +1,37 @@
+.movie-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+}
+
+.movie{
+    display: flex;
+    width: 80%;
+    gap: 50px;
+    
+}
+
+.movie-photo{
+    width: 350px;
+}
+.movie-infos{
+
+}
+.movie-infos_title{
+    font-size: 50px;
+    margin-top: 5px;
+}
+.movie-infos_text{
+    font-size: 20px;
+    width: 80%;
+    font-weight: 400;
+}
+.movie-info-date{
+    opacity: .6;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 105px;
+}
