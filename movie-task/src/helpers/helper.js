@@ -15,4 +15,4 @@ const getData = async (path) =>{
 
 }
 
-export default getData
+export default getData;

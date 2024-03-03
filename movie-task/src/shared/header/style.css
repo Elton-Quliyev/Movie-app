@@ -52,3 +52,28 @@
     text-decoration: none;
 
 }
+
+.right{
+    display: flex;
+    align-items: center;
+}
+
+.search-bar{
+    width: 500px;
+    display: flex;
+    justify-content: end;
+}
+
+.inp{
+
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    
+}
+.inp:focus {
+    
+    outline: none;
+    box-shadow: 0 0 8px  rgb(234, 234, 108); 
+}

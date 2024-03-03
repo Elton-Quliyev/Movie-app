@@ -1,12 +1,18 @@
+import { useState } from 'react';
+import { Link, Outlet, useNavigate } from 'react-router-dom';
 import './style.css'
-import {Link, Outlet} from 'react-router-dom'
 
-const HeaderComponent = ({title , img , subtitle}) =>{
+const HeaderComponent = ({ title, img, subtitle }) => {
+  const [searchInput, setSearchInput] = useState('');
+  const navigate = useNavigate();
 
+  const handleSearchChange = (e) => {
+    setSearchInput(e.target.value);
+    navigate(`/?search=${e.target.value}`);
+  };
 
-    return(
-
-        <div className="header" >
+  return (
+    <div className="header" >
             <div className='left'>
                 <img className="logo" src={img} alt={title}/>
                 
@@ -27,15 +33,23 @@ const HeaderComponent = ({title , img , subtitle}) =>{
                     </li>
                 </ul>
 
+                <div className='search-bar'>
+                    <input
+                        className='inp'
+                        name='search'
+                        type='text'
+                        onChange={handleSearchChange}
+                        value={searchInput}
+                        placeholder='Search'
+                    />
+                </div>
             </div>
 
-            <div>
-                <Outlet/>
-            </div>
-            
-        </div>
-    )
-
-}
+      <div>
+        <Outlet />
+      </div>
+    </div>
+  );
+};
 
 export default HeaderComponent;
