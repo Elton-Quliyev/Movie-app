@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLocation , useNavigate } from 'react-router-dom';
 import Card from '../../components/Card';
 import getData from '../../helpers/helper';
-
+import './style.css'
 
 export default function Home() {
   const [info, setInfo] = useState([]);
@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <div className="container">
       {filteredInfo.length === 0 ? (
-        <div className='no-info'> bele bir netice yoxdur</div>
+        <div className='no-info'> Bele bir netice yoxdur...</div>
         ):(
         
       <div className="movies">

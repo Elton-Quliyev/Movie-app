@@ -38,9 +38,9 @@ const HeaderComponent = ({ title, img, subtitle }) => {
                         className='inp'
                         name='search'
                         type='text'
+                        placeholder='Search'
                         onChange={handleSearchChange}
                         value={searchInput}
-                        placeholder='Search'
                     />
                 </div>
             </div>
